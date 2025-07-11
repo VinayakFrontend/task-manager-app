@@ -14,8 +14,8 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) Task Manager app th
 ## 🚀 Live Demo
 
 You can deploy:
-- **Frontend** on [Vercel](https://vercel.com/)
-- **Backend** on [Render](https://render.com/)
+- **Frontend** on [Vercel](https://task-manager-app-mauve-three.vercel.app/)
+- **Backend** on [Render]([https://render.com/](https://task-manager-app-xp9b.onrender.com/))
 
 ## 📁 Folder Structure
 
@@ -84,20 +84,11 @@ cd frontend
 npm install
 ```
 
-Update `api.js`:
-
-```js
-// frontend/api.js
-import axios from 'axios';
-export default axios.create({
-  baseURL: 'http://localhost:5000/api',
-});
-```
 
 Start Frontend:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## 🌐 Deployment Instructions
@@ -122,12 +113,3 @@ npm start
 - Real-time toast notifications
 - Fully responsive
 
-## 🧑‍💻 Author
-
-**Vinu**  
-GitHub: [your-github]  
-LinkedIn: [your-linkedin]
-
-## 📜 License
-
-MIT License
