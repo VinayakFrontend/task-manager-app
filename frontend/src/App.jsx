@@ -1,19 +1,3 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Login from './components/Login';
-// import Signup from './components/Signup';
-// import Dashboard from './components/Dashboard';
-
-// export default function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Login />} />
-//         <Route path="/signup" element={<Signup />} />
-//         <Route path="/dashboard" element={<Dashboard />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
 
 
 import React from 'react';
@@ -33,7 +17,7 @@ const App = () => {
   return (
     <Routes>
       {/*<Route path="/" element={isAuth ? <Dashboard /> : <Navigate to="/login" />} />*/}
-      <Route path="/" element= {<Dashboard />} />
+      <Route path="/" element={ <Dashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/admin/users" element={<UserManagement />} />
