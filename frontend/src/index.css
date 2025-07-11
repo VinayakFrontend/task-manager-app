@@ -1,0 +1,138 @@
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f3f4;
+  color: #202124;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4 {
+  color: #202124;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* ===== Layout Container ===== */
+.dashboard {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px rgba(60, 64, 67, 0.15);
+}
+
+/* ===== Input & Form Controls ===== */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  outline: none;
+}
+
+/* ===== Button Style ===== */
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1558b0;
+}
+
+button:disabled {
+  background-color: #e8eaed;
+  color: #9aa0a6;
+  cursor: not-allowed;
+}
+
+/* ===== Task List Style ===== */
+.task-list {
+  list-style: none;
+  margin-top: 24px;
+}
+
+.task-list li {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-left: 4px solid #1a73e8;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.task-list li div {
+  margin-bottom: 8px;
+}
+
+.task-list li button {
+  margin-top: 4px;
+}
+
+/* ===== Label Styling (optional) ===== */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+  color: #5f6368;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  input,
+  select,
+  button,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .task-list li {
+    padding: 14px;
+  }
+}

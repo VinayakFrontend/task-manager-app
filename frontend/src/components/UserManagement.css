@@ -1,0 +1,234 @@
+/* .user-management-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #202124;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+}
+
+.card input, .card select {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.card select {
+  background: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #e0e0e0;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #d5d5d5;
+}
+
+.btn.primary {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #1669c1;
+}
+
+.btn.danger {
+  background: #e53935;
+  color: white;
+}
+
+.btn.danger:hover {
+  background: #c62828;
+}
+
+.btn.small {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.user-table th, .user-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+  background: #f5f5f5;
+  font-weight: 500;
+} */
+
+
+
+/* Container */
+.user-management-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #202124;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+}
+
+/* Inputs & Selects */
+.card input,
+.card select {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Button group layout */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #e0e0e0;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #d5d5d5;
+}
+
+.btn.primary {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #1669c1;
+}
+
+.btn.danger {
+  background: #e53935;
+  color: white;
+}
+
+.btn.danger:hover {
+  background: #c62828;
+}
+
+.btn.small {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.user-table th,
+.user-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.user-table th {
+  background: #f5f5f5;
+  font-weight: 500;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .user-management-container {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem;
+  }
+
+  .card input,
+  .card select {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn,
+  .btn.small {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .user-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .user-table table {
+    min-width: 550px;
+  }
+}
