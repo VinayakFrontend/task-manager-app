@@ -16,7 +16,7 @@ const Signup = () => {
       const res = await API.post('/auth/signup', form);
       localStorage.setItem('token', res.data.token);
       toast.success('Signup successful!');
-      setTimeout(() => navigate('/'), 1500);
+      navigate('/');
     } catch (err) {
       toast.error(err.response?.data?.msg || 'Signup failed');
     }
