@@ -16,7 +16,7 @@ const Login = () => {
       const res = await API.post('/auth/login', form);
       localStorage.setItem('token', res.data.token);
       toast.success('Login successful!');
-      setTimeout(() => navigate('/'), 1000);
+      navigate('/');
     } catch (err) {
       toast.error(err.response?.data?.msg || 'Login failed');
     }
