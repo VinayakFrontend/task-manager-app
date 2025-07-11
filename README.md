@@ -74,7 +74,7 @@ JWT_SECRET=your_secret_key
 Start Backend:
 
 ```bash
-npm start
+node server.js
 ```
 
 ### 3. Frontend Setup
