@@ -48,8 +48,8 @@ router.put('/:id/comment', auth, async (req, res) => {
   const task = await Task.findById(req.params.id);
   if (!task) return res.status(404).json({ msg: 'Task not found' });
 
-  if (task.assignedTo.toString() !== req.user.id)
-    return res.status(403).json({ msg: 'Not authorized' });
+  // if (task.assignedTo.toString() !== req.user.id)
+  //   return res.status(403).json({ msg: 'Not authorized' });
 
   task.comments.push(comment);
   await task.save();
