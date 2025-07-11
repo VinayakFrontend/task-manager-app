@@ -15,7 +15,7 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) Task Manager app th
 
 You can deploy:
 - **Frontend** on [Vercel](https://task-manager-app-mauve-three.vercel.app/)
-- **Backend** on [Render]([https://render.com/](https://task-manager-app-xp9b.onrender.com/))
+- **Backend** on [Render](https://render.com/](https://task-manager-app-xp9b.onrender.com/))
 
 ## 📁 Folder Structure
 
